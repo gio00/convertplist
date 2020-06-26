@@ -1,0 +1,43 @@
+{
+    "name": "convertplist",
+    "displayName": "convertplist",
+    "description": "Convert Apple Binary Plist To Text Plist",
+    "version": "0.0.7",
+    "publisher": "gio00",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "galleryBanner": {
+        "color": "#C80000",
+        "theme": "dark"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "activationEvents": [
+        "onCommand:extension.convertPlist",
+        "onCommand:extension.convertPlistBack"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.convertPlist",
+                "title": "Convert Binary Plist"
+            },
+            {
+                "command": "extension.convertPlistBack",
+                "title": "Convert Text Plist To Binary"
+            }
+        ]
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.48",
+        "@types/node": "^7.10.11",
+        "eslint": "^4.19.1",
+        "typescript": "^2.9.2",
+        "@types/vscode": "^1.18.0",
+        "vscode-test": "^1.4.0"
+    }
+}
